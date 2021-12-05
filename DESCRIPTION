@@ -1,0 +1,26 @@
+Package: lsmr
+Title: Linear Surrogate Model for Regression
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = c("David", "Senhora"),
+           family = "Navega",
+           role = c("aut", "cre", "cph"),
+           email = "dsnavega@gmail.com",
+           comment = c(ORCID = "0000-0003-4495-3762"))
+Description: This package implements as linear regression as surrogate model
+        for more complex and black-box models. First predictors are decorrelated
+        using ZCA, then a linear model is fitted in the ZCA space. Several properties
+        that improve interpretation arise naturally. Based on work by
+        Zuber and Strimmer (2011) and Biecek and Burzykowski (2021)
+License: GPL-3
+Encoding: UTF-8
+Language: en
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    corpcor,
+    whitening,
+    stats,
+    dplyr,
+    magrittr
